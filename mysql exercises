@@ -1,0 +1,89 @@
+
+
+create table customers (
+customer_id int,
+first_name VARCHAR(255),
+last_name VARCHAR(255),
+email_address VARCHAR(255),
+number_of_complaints int,
+primary key (customer_id),
+unique key (email_address) )
+;
+
+alter table customers
+drop index email_address;
+
+drop table customers;
+
+create table customers (
+customer_id int not null auto_increment,
+first_name VARCHAR(255),
+last_name VARCHAR(255),
+email_address VARCHAR(255),
+number_of_complaints int,
+primary key (customer_id)
+);
+
+
+alter table customers
+add column gender ENUM('M','F')AFTER last_name;
+
+insert into customers(first_name,last_name,gender,email_address,number_of_complaints)
+values('John','Mckinley','M','john.mckinley@365careers.com',0)
+;
+
+alter table customers
+change column number_of_complaints number_of_complaints INT DEFAULT 0;
+
+INSERT into customers (first_name,last_name,gender)
+VALUES ('Peter','Figaro','M')
+;
+
+SELECT * FROM customers;
+
+ALTER TABLE CUSTOMERS
+ALTER COLUMN number_of_complaints DROP DEFAULT;
+
+CREATE TABLE companies
+(
+company_id INT AUTO_INCREMENT,
+headquarters_phone_number VARCHAR(255),
+company_name VARCHAR(255) NOT NULL,
+primary key(company_id)
+);
+
+ALTER TABLE companies
+MODIFY company_name VARCHAR(255) NULL;
+
+ALTER TABLE companies
+CHANGE COLUMN company_name company_name VARCHAR(255) NOT NULL;
+
+INSERT INTO companies (headquarters_phone_number, company_name)
+values ('+1 (202) 555-0196','Company A')
+;
+
+SELECT * FROM companies;
+
+Alter table companies
+MODIFY headquarters_phone_number VARCHAR(255) NULL;
+
+Alter table companies
+change column headquarters_phone_number headquarters_phone_number VARCHAR(255)NOT NULL;
+
+
+create table companies(
+company_id VARCHAR(255),
+company_name VARCHAR(255) DEFAULT'X',
+headquarters_phone_number VARCHAR(255),
+primary key(company_id),
+unique key(headquarters_phone_number)
+);
+DROP TABLE COMPANIES
+
+
+use sales;
+
+CREATE TABLE IF NOT EXISTS test (
+    numbers INT(10),
+    words VARCHAR(10)
+);
