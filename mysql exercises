@@ -152,3 +152,6 @@ WHERE
     first_name = 'Kathie'
         OR first_name = 'Mark'
         OR first_name = 'Nathan';
+
+ Select * from employees
+        where first_name in ('Cathie', 'Mark', 'Nathan');
