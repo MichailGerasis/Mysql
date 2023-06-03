@@ -143,3 +143,12 @@ WHERE
     gender = 'F'
         AND (first_name = 'Kellie'
         OR first_name = 'Aruna');
+
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name = 'Kathie'
+        OR first_name = 'Mark'
+        OR first_name = 'Nathan';
