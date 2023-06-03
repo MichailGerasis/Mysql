@@ -155,3 +155,11 @@ WHERE
 
  Select * from employees
         where first_name in ('Cathie', 'Mark', 'Nathan');
+
+
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name IN ('Denis' , 'Elvis');
