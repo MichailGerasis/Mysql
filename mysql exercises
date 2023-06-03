@@ -135,3 +135,11 @@ FROM
     employees
 WHERE
     first_name = 'Kellie' AND gender = 'F';
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    gender = 'F'
+        AND (first_name = 'Kellie'
+        OR first_name = 'Aruna');
