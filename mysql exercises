@@ -233,3 +233,10 @@ WHERE
     
     select * from employees
     where first_name not like ('%Jack%');
+
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    hire_Date BETWEEN '1990-01-01' AND '2000=01=01';
