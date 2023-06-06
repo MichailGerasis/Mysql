@@ -226,3 +226,10 @@ FROM
     employees
 WHERE
     emp_no LIKE ('1000_');
+
+
+    Select * from employees
+    where first_name Like ('%Jack%');
+    
+    select * from employees
+    where first_name not like ('%Jack%');
