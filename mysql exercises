@@ -284,3 +284,18 @@ FROM
 WHERE
     dept_no IS NOT NULL;
      
+     
+     SELECT 
+    *
+FROM
+    employees
+WHERE
+    gender = 'f'
+        AND hire_date >= '2000-01-01';
+        
+SELECT 
+    *
+FROM
+    salaries
+WHERE
+    salary > '15000';
