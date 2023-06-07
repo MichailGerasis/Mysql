@@ -276,3 +276,11 @@ FROM
     departments
 WHERE
     dept_no BETWEEN 'd003' AND 'd006';
+    
+    SELECT 
+    dept_name
+FROM
+    departments
+WHERE
+    dept_no IS NOT NULL;
+     
